@@ -343,7 +343,7 @@
   <div class="container">
     <div class="about-grid">
       <div class="about-img reveal">
-        <img src="https://images.pexels.com/photos/31860843/pexels-photo-31860843.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Water storage tanks ready for delivery" loading="lazy">
+        <img src="images/tank-01.jpg" alt="Water storage tanks ready for delivery" loading="lazy">
         <div class="about-badge"><div class="num">15-20%</div><div class="lbl">Off Every Tank, Always</div></div>
       </div>
       <div class="about-copy reveal">
@@ -372,19 +372,19 @@
     </div>
     <div class="products-grid">
       <div class="pcard reveal">
-        <div class="imgwrap"><img src="https://images.pexels.com/photos/169190/pexels-photo-169190.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Blue water tank outside a home" loading="lazy"></div>
+        <div class="imgwrap"><img src="images/tank-02.jpg" alt="Blue water tank outside a home" loading="lazy"></div>
         <div class="body"><h4>Domestic &amp; Home Tanks</h4><p>Reliable household water storage from 1,000L to 10,000L for compounds of every size.</p><div class="pcard-actions"><a href="#pricing" class="link">View Prices →</a><button class="btn btn-wa btn-sm" onclick="openWaModal('1,000L')">WhatsApp</button></div></div>
       </div>
       <div class="pcard reveal">
-        <div class="imgwrap"><img src="https://images.pexels.com/photos/2165759/pexels-photo-2165759.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Large farm water tank for irrigation" loading="lazy"></div>
+        <div class="imgwrap"><img src="images/tank-03.jpg" alt="Large farm water tank for irrigation" loading="lazy"></div>
         <div class="body"><h4>Farm &amp; Agricultural Tanks</h4><p>High-capacity storage for irrigation, livestock and dry-season resilience.</p><div class="pcard-actions"><a href="#pricing" class="link">View Prices →</a><button class="btn btn-wa btn-sm" onclick="openWaModal('10,000L')">WhatsApp</button></div></div>
       </div>
       <div class="pcard reveal">
-        <div class="imgwrap"><img src="https://images.pexels.com/photos/1115656/pexels-photo-1115656.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Industrial water storage tanks" loading="lazy"></div>
+        <div class="imgwrap"><img src="images/tank-04.jpg" alt="Industrial water storage tanks" loading="lazy"></div>
         <div class="body"><h4>Industrial &amp; Commercial</h4><p>Large-scale tanks for factories, hotels and construction sites.</p><div class="pcard-actions"><a href="#pricing" class="link">View Prices →</a><button class="btn btn-wa btn-sm" onclick="openWaModal('24,000L')">WhatsApp</button></div></div>
       </div>
       <div class="pcard reveal">
-        <div class="imgwrap"><img src="https://images.pexels.com/photos/2366175/pexels-photo-2366175.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Institutional water storage tank" loading="lazy"></div>
+        <div class="imgwrap"><img src="images/tank-05.jpg" alt="Institutional water storage tank" loading="lazy"></div>
         <div class="body"><h4>Boreholes &amp; Institutions</h4><p>Purpose-built storage for schools, hospitals, churches and water projects.</p><div class="pcard-actions"><a href="#pricing" class="link">View Prices →</a><button class="btn btn-wa btn-sm" onclick="openWaModal('16,000L')">WhatsApp</button></div></div>
       </div>
     </div>
@@ -647,11 +647,11 @@ if (statsStrip) statIO.observe(statsStrip);
 
 // ---------- Hero slideshow ----------
 const heroImages = [
-  {url:'https://images.pexels.com/photos/4754251/pexels-photo-4754251.jpeg?auto=compress&cs=tinysrgb&w=1800', credit:'Premium water tanks delivered to your doorstep'},
-  {url:'https://images.pexels.com/photos/2165759/pexels-photo-2165759.jpeg?auto=compress&cs=tinysrgb&w=1800', credit:'Farm water storage solutions'},
-  {url:'https://images.pexels.com/photos/169190/pexels-photo-169190.jpeg?auto=compress&cs=tinysrgb&w=1800', credit:'Genuine tanks, built to last'},
-  {url:'https://images.pexels.com/photos/1115656/pexels-photo-1115656.jpeg?auto=compress&cs=tinysrgb&w=1800', credit:'A tank in every size, ready in stock'},
-  {url:'https://images.pexels.com/photos/31860843/pexels-photo-31860843.jpeg?auto=compress&cs=tinysrgb&w=1800', credit:'Free regional delivery, every order'}
+  {url:'images/tank-06.jpg', credit:'Premium water tanks delivered to your doorstep'},
+  {url:'images/tank-03.jpg', credit:'Farm water storage solutions'},
+  {url:'images/tank-02.jpg', credit:'Genuine tanks, built to last'},
+  {url:'images/tank-04.jpg', credit:'A tank in every size, ready in stock'},
+  {url:'images/tank-01.jpg', credit:'Free regional delivery, every order'}
 ];
 const heroSlidesEl = document.getElementById('heroSlides');
 const dotsEl = document.getElementById('slideDots');
@@ -695,12 +695,12 @@ setInterval(() => {
 
 // ---------- Pricing data ----------
 const tankImg = {
-  small:'https://images.pexels.com/photos/169190/pexels-photo-169190.jpeg?auto=compress&cs=tinysrgb&w=500',
-  mid:'https://images.pexels.com/photos/4754251/pexels-photo-4754251.jpeg?auto=compress&cs=tinysrgb&w=500',
-  yard:'https://images.pexels.com/photos/2165759/pexels-photo-2165759.jpeg?auto=compress&cs=tinysrgb&w=500',
-  community:'https://images.pexels.com/photos/2366175/pexels-photo-2366175.jpeg?auto=compress&cs=tinysrgb&w=500',
-  industrial:'https://images.pexels.com/photos/1115656/pexels-photo-1115656.jpeg?auto=compress&cs=tinysrgb&w=500',
-  truck:'https://images.pexels.com/photos/31860843/pexels-photo-31860843.jpeg?auto=compress&cs=tinysrgb&w=500'
+  small:'images/tank-02.jpg',
+  mid:'images/tank-06.jpg',
+  yard:'images/tank-03.jpg',
+  community:'images/tank-05.jpg',
+  industrial:'images/tank-04.jpg',
+  truck:'images/tank-01.jpg'
 };
 const priceData = [
   {cap:'1,000L', old:15500, save:18, img:tankImg.small, feat:['Ideal for small households','Compact footprint']},
@@ -731,13 +731,12 @@ priceData.forEach(p => {
 
 // ---------- Gallery with show more ----------
 const galleryImgs = [
-  'https://images.pexels.com/photos/169190/pexels-photo-169190.jpeg?auto=compress&cs=tinysrgb',
-  'https://images.pexels.com/photos/2165759/pexels-photo-2165759.jpeg?auto=compress&cs=tinysrgb',
-  'https://images.pexels.com/photos/2366175/pexels-photo-2366175.jpeg?auto=compress&cs=tinysrgb',
-  'https://images.pexels.com/photos/1115656/pexels-photo-1115656.jpeg?auto=compress&cs=tinysrgb',
-  'https://images.pexels.com/photos/4754251/pexels-photo-4754251.jpeg?auto=compress&cs=tinysrgb',
-  'https://images.pexels.com/photos/31860843/pexels-photo-31860843.jpeg?auto=compress&cs=tinysrgb',
-  'https://images.pexels.com/photos/4489389/pexels-photo-4489389.jpeg?auto=compress&cs=tinysrgb',
+  'images/tank-02.jpg','images/tank-03.jpg','images/tank-05.jpg','images/tank-04.jpg',
+  'images/tank-06.jpg','images/tank-01.jpg','images/tank-07.jpg','images/tank-08.jpg',
+  'images/tank-09.jpg','images/tank-10.jpg','images/tank-11.jpg','images/tank-12.jpg',
+  'images/tank-13.jpg','images/tank-14.jpg','images/tank-15.jpg','images/tank-16.jpg',
+  'images/tank-17.jpg','images/tank-18.jpg','images/tank-19.jpg','images/tank-20.jpg',
+  'images/tank-21.jpg',
 ];
 const galleryData = [
   {cat:'residential', img:galleryImgs[0], title:'Home Tank Installation', loc:'Karen, Nairobi'},
@@ -747,11 +746,20 @@ const galleryData = [
   {cat:'residential', img:galleryImgs[4], title:'Compound Tank Upgrade', loc:'Eldoret, Kenya'},
   {cat:'farms', img:galleryImgs[5], title:'Borehole Tank Install', loc:'Mbarara, Uganda'},
   {cat:'institutions', img:galleryImgs[6], title:'Church Water Supply', loc:'Arusha, Tanzania'},
-  {cat:'industrial', img:galleryImgs[3], title:'Construction Site Tank', loc:'Kampala, Uganda'},
-  {cat:'residential', img:galleryImgs[4], title:'Rooftop Harvesting Tank', loc:'Kisumu, Kenya'},
-  {cat:'farms', img:galleryImgs[1], title:'Dairy Farm Storage', loc:'Bujumbura, Burundi'},
-  {cat:'institutions', img:galleryImgs[2], title:'Hospital Water Supply', loc:'Juba, South Sudan'},
-  {cat:'industrial', img:galleryImgs[5], title:'Warehouse Storage Tank', loc:'Thika, Kenya'},
+  {cat:'industrial', img:galleryImgs[7], title:'Construction Site Tank', loc:'Kampala, Uganda'},
+  {cat:'residential', img:galleryImgs[8], title:'Rooftop Harvesting Tank', loc:'Kisumu, Kenya'},
+  {cat:'farms', img:galleryImgs[9], title:'Dairy Farm Storage', loc:'Bujumbura, Burundi'},
+  {cat:'institutions', img:galleryImgs[10], title:'Hospital Water Supply', loc:'Juba, South Sudan'},
+  {cat:'industrial', img:galleryImgs[11], title:'Warehouse Storage Tank', loc:'Thika, Kenya'},
+  {cat:'residential', img:galleryImgs[12], title:'Family Compound Tank', loc:'Machakos, Kenya'},
+  {cat:'farms', img:galleryImgs[13], title:'Greenhouse Water Supply', loc:'Naivasha, Kenya'},
+  {cat:'institutions', img:galleryImgs[14], title:'Clinic Water Storage', loc:'Mwanza, Tanzania'},
+  {cat:'industrial', img:galleryImgs[15], title:'Site Tank Delivery', loc:'Nairobi, Kenya'},
+  {cat:'residential', img:galleryImgs[16], title:'New Estate Installation', loc:'Ruiru, Kenya'},
+  {cat:'farms', img:galleryImgs[17], title:'Poultry Farm Tank', loc:'Nyeri, Kenya'},
+  {cat:'institutions', img:galleryImgs[18], title:'University Water Project', loc:'Kampala, Uganda'},
+  {cat:'industrial', img:galleryImgs[19], title:'Factory Yard Tanks', loc:'Mombasa, Kenya'},
+  {cat:'residential', img:galleryImgs[20], title:'Recent Customer Install', loc:'Nakuru, Kenya'},
 ];
 const grid = document.getElementById('galleryGrid');
 const showMoreBtn = document.getElementById('showMoreBtn');
