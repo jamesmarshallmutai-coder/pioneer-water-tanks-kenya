@@ -140,7 +140,8 @@
   .pcard .body{padding:20px;}
   .pcard h4{font-size:1.02rem;}
   .pcard p{font-size:0.84rem; color:var(--muted); margin-top:8px; line-height:1.55;}
-  .pcard .link{display:inline-flex; align-items:center; gap:6px; margin-top:14px; font-size:0.83rem; font-weight:700; color:var(--blue);}
+  .pcard .link{display:inline-flex; align-items:center; gap:6px; font-size:0.83rem; font-weight:700; color:var(--blue);}
+  .pcard-actions{display:flex; align-items:center; justify-content:space-between; gap:10px; margin-top:14px;}
 
   /* ---------- Pricing ---------- */
   #pricing{background:var(--white);}
@@ -342,7 +343,7 @@
   <div class="container">
     <div class="about-grid">
       <div class="about-img reveal">
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Variety_of_water_storage_tanks_and_rainwater_harvesting_equipment_(4481563848).jpg?width=900" alt="Yard of various water storage tanks ready for delivery" loading="lazy">
+        <img src="https://images.pexels.com/photos/31860843/pexels-photo-31860843.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Water storage tanks ready for delivery" loading="lazy">
         <div class="about-badge"><div class="num">15-20%</div><div class="lbl">Off Every Tank, Always</div></div>
       </div>
       <div class="about-copy reveal">
@@ -371,20 +372,20 @@
     </div>
     <div class="products-grid">
       <div class="pcard reveal">
-        <div class="imgwrap"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ghana_Water_Storage_Tank.jpg?width=600" alt="Domestic water tank outside a home" loading="lazy"></div>
-        <div class="body"><h4>Domestic &amp; Home Tanks</h4><p>Reliable household water storage from 1,000L to 10,000L for compounds of every size.</p><span class="link">View Prices →</span></div>
+        <div class="imgwrap"><img src="https://images.pexels.com/photos/169190/pexels-photo-169190.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Blue water tank outside a home" loading="lazy"></div>
+        <div class="body"><h4>Domestic &amp; Home Tanks</h4><p>Reliable household water storage from 1,000L to 10,000L for compounds of every size.</p><div class="pcard-actions"><a href="#pricing" class="link">View Prices →</a><button class="btn btn-wa btn-sm" onclick="openWaModal('1,000L')">WhatsApp</button></div></div>
       </div>
       <div class="pcard reveal">
-        <div class="imgwrap"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Opening_the_rainwater_harvesting_tank_(6955943981).jpg?width=600" alt="Farm rainwater harvesting tank handover" loading="lazy"></div>
-        <div class="body"><h4>Farm &amp; Agricultural Tanks</h4><p>High-capacity storage for irrigation, livestock and dry-season resilience.</p><span class="link">View Prices →</span></div>
+        <div class="imgwrap"><img src="https://images.pexels.com/photos/2165759/pexels-photo-2165759.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Large farm water tank for irrigation" loading="lazy"></div>
+        <div class="body"><h4>Farm &amp; Agricultural Tanks</h4><p>High-capacity storage for irrigation, livestock and dry-season resilience.</p><div class="pcard-actions"><a href="#pricing" class="link">View Prices →</a><button class="btn btn-wa btn-sm" onclick="openWaModal('10,000L')">WhatsApp</button></div></div>
       </div>
       <div class="pcard reveal">
-        <div class="imgwrap"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/AquaStore_Water_Storage_Tank_(6237644953).jpg?width=600" alt="Large industrial water storage tank" loading="lazy"></div>
-        <div class="body"><h4>Industrial &amp; Commercial</h4><p>Large-scale tanks for factories, hotels and construction sites.</p><span class="link">View Prices →</span></div>
+        <div class="imgwrap"><img src="https://images.pexels.com/photos/1115656/pexels-photo-1115656.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Industrial water storage tanks" loading="lazy"></div>
+        <div class="body"><h4>Industrial &amp; Commercial</h4><p>Large-scale tanks for factories, hotels and construction sites.</p><div class="pcard-actions"><a href="#pricing" class="link">View Prices →</a><button class="btn btn-wa btn-sm" onclick="openWaModal('24,000L')">WhatsApp</button></div></div>
       </div>
       <div class="pcard reveal">
-        <div class="imgwrap"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Water_Tank_Kerala_House.JPG?width=600" alt="Institutional water storage tank installation" loading="lazy"></div>
-        <div class="body"><h4>Boreholes &amp; Institutions</h4><p>Purpose-built storage for schools, hospitals, churches and water projects.</p><span class="link">View Prices →</span></div>
+        <div class="imgwrap"><img src="https://images.pexels.com/photos/2366175/pexels-photo-2366175.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Institutional water storage tank" loading="lazy"></div>
+        <div class="body"><h4>Boreholes &amp; Institutions</h4><p>Purpose-built storage for schools, hospitals, churches and water projects.</p><div class="pcard-actions"><a href="#pricing" class="link">View Prices →</a><button class="btn btn-wa btn-sm" onclick="openWaModal('16,000L')">WhatsApp</button></div></div>
       </div>
     </div>
   </div>
@@ -646,11 +647,11 @@ if (statsStrip) statIO.observe(statsStrip);
 
 // ---------- Hero slideshow ----------
 const heroImages = [
-  {url:'https://commons.wikimedia.org/wiki/Special:FilePath/Opening_the_rainwater_harvesting_tank_(6955943981).jpg?width=1800', credit:'Community tank handover day'},
-  {url:'https://commons.wikimedia.org/wiki/Special:FilePath/Tanker_truck_full_of_water.jpg?width=1800', credit:'Tanks delivered straight to your gate'},
-  {url:'https://commons.wikimedia.org/wiki/Special:FilePath/Ghana_Water_Storage_Tank.jpg?width=1800', credit:'Genuine tanks, built for African conditions'},
-  {url:'https://commons.wikimedia.org/wiki/Special:FilePath/Variety_of_water_storage_tanks_and_rainwater_harvesting_equipment_(4481563848).jpg?width=1800', credit:'A tank in every size, ready in stock'},
-  {url:'https://commons.wikimedia.org/wiki/Special:FilePath/FEMA_-_35037_-_FEMA_water_tanker_truck_in_Kansas.jpg?width=1800', credit:'Free regional delivery, every order'}
+  {url:'https://images.pexels.com/photos/4754251/pexels-photo-4754251.jpeg?auto=compress&cs=tinysrgb&w=1800', credit:'Premium water tanks delivered to your doorstep'},
+  {url:'https://images.pexels.com/photos/2165759/pexels-photo-2165759.jpeg?auto=compress&cs=tinysrgb&w=1800', credit:'Farm water storage solutions'},
+  {url:'https://images.pexels.com/photos/169190/pexels-photo-169190.jpeg?auto=compress&cs=tinysrgb&w=1800', credit:'Genuine tanks, built to last'},
+  {url:'https://images.pexels.com/photos/1115656/pexels-photo-1115656.jpeg?auto=compress&cs=tinysrgb&w=1800', credit:'A tank in every size, ready in stock'},
+  {url:'https://images.pexels.com/photos/31860843/pexels-photo-31860843.jpeg?auto=compress&cs=tinysrgb&w=1800', credit:'Free regional delivery, every order'}
 ];
 const heroSlidesEl = document.getElementById('heroSlides');
 const dotsEl = document.getElementById('slideDots');
@@ -694,12 +695,12 @@ setInterval(() => {
 
 // ---------- Pricing data ----------
 const tankImg = {
-  small:'https://commons.wikimedia.org/wiki/Special:FilePath/Ghana_Water_Storage_Tank.jpg?width=500',
-  mid:'https://commons.wikimedia.org/wiki/Special:FilePath/Water_Tank_Kerala_House.JPG?width=500',
-  yard:'https://commons.wikimedia.org/wiki/Special:FilePath/Variety_of_water_storage_tanks_and_rainwater_harvesting_equipment_(4481563848).jpg?width=500',
-  community:'https://commons.wikimedia.org/wiki/Special:FilePath/Opening_the_rainwater_harvesting_tank_(6955943981).jpg?width=500',
-  industrial:'https://commons.wikimedia.org/wiki/Special:FilePath/AquaStore_Water_Storage_Tank_(6237644953).jpg?width=500',
-  truck:'https://commons.wikimedia.org/wiki/Special:FilePath/Tanker_truck_full_of_water.jpg?width=500'
+  small:'https://images.pexels.com/photos/169190/pexels-photo-169190.jpeg?auto=compress&cs=tinysrgb&w=500',
+  mid:'https://images.pexels.com/photos/4754251/pexels-photo-4754251.jpeg?auto=compress&cs=tinysrgb&w=500',
+  yard:'https://images.pexels.com/photos/2165759/pexels-photo-2165759.jpeg?auto=compress&cs=tinysrgb&w=500',
+  community:'https://images.pexels.com/photos/2366175/pexels-photo-2366175.jpeg?auto=compress&cs=tinysrgb&w=500',
+  industrial:'https://images.pexels.com/photos/1115656/pexels-photo-1115656.jpeg?auto=compress&cs=tinysrgb&w=500',
+  truck:'https://images.pexels.com/photos/31860843/pexels-photo-31860843.jpeg?auto=compress&cs=tinysrgb&w=500'
 };
 const priceData = [
   {cap:'1,000L', old:15500, save:18, img:tankImg.small, feat:['Ideal for small households','Compact footprint']},
@@ -730,27 +731,27 @@ priceData.forEach(p => {
 
 // ---------- Gallery with show more ----------
 const galleryImgs = [
-  'https://commons.wikimedia.org/wiki/Special:FilePath/Ghana_Water_Storage_Tank.jpg',
-  'https://commons.wikimedia.org/wiki/Special:FilePath/Opening_the_rainwater_harvesting_tank_(6955943981).jpg',
-  'https://commons.wikimedia.org/wiki/Special:FilePath/Water_Tank_Kerala_House.JPG',
-  'https://commons.wikimedia.org/wiki/Special:FilePath/AquaStore_Water_Storage_Tank_(6237644953).jpg',
-  'https://commons.wikimedia.org/wiki/Special:FilePath/Variety_of_water_storage_tanks_and_rainwater_harvesting_equipment_(4481563848).jpg',
-  'https://commons.wikimedia.org/wiki/Special:FilePath/Tanker_truck_full_of_water.jpg',
-  'https://commons.wikimedia.org/wiki/Special:FilePath/FEMA_-_35037_-_FEMA_water_tanker_truck_in_Kansas.jpg',
+  'https://images.pexels.com/photos/169190/pexels-photo-169190.jpeg?auto=compress&cs=tinysrgb',
+  'https://images.pexels.com/photos/2165759/pexels-photo-2165759.jpeg?auto=compress&cs=tinysrgb',
+  'https://images.pexels.com/photos/2366175/pexels-photo-2366175.jpeg?auto=compress&cs=tinysrgb',
+  'https://images.pexels.com/photos/1115656/pexels-photo-1115656.jpeg?auto=compress&cs=tinysrgb',
+  'https://images.pexels.com/photos/4754251/pexels-photo-4754251.jpeg?auto=compress&cs=tinysrgb',
+  'https://images.pexels.com/photos/31860843/pexels-photo-31860843.jpeg?auto=compress&cs=tinysrgb',
+  'https://images.pexels.com/photos/4489389/pexels-photo-4489389.jpeg?auto=compress&cs=tinysrgb',
 ];
 const galleryData = [
-  {cat:'residential', img:galleryImgs[0], title:'Home Tank Installation', loc:'Karen Area, Kenya'},
-  {cat:'farms', img:galleryImgs[1], title:'Irrigation Storage Setup', loc:'Nakuru, Kenya'},
+  {cat:'residential', img:galleryImgs[0], title:'Home Tank Installation', loc:'Karen, Nairobi'},
+  {cat:'farms', img:galleryImgs[1], title:'Farm Irrigation Storage', loc:'Nakuru, Kenya'},
   {cat:'institutions', img:galleryImgs[2], title:'School Water Project', loc:'Kigali, Rwanda'},
   {cat:'industrial', img:galleryImgs[3], title:'Factory Reservoir', loc:'Mombasa, Kenya'},
   {cat:'residential', img:galleryImgs[4], title:'Compound Tank Upgrade', loc:'Eldoret, Kenya'},
-  {cat:'farms', img:galleryImgs[1], title:'Borehole Tank Install', loc:'Mbarara, Uganda'},
-  {cat:'institutions', img:galleryImgs[2], title:'Church Water Supply', loc:'Arusha, Tanzania'},
+  {cat:'farms', img:galleryImgs[5], title:'Borehole Tank Install', loc:'Mbarara, Uganda'},
+  {cat:'institutions', img:galleryImgs[6], title:'Church Water Supply', loc:'Arusha, Tanzania'},
   {cat:'industrial', img:galleryImgs[3], title:'Construction Site Tank', loc:'Kampala, Uganda'},
-  {cat:'residential', img:galleryImgs[0], title:'Rooftop Harvesting Tank', loc:'Kisumu, Kenya'},
-  {cat:'farms', img:galleryImgs[4], title:'Dairy Farm Storage', loc:'Bujumbura, Burundi'},
+  {cat:'residential', img:galleryImgs[4], title:'Rooftop Harvesting Tank', loc:'Kisumu, Kenya'},
+  {cat:'farms', img:galleryImgs[1], title:'Dairy Farm Storage', loc:'Bujumbura, Burundi'},
   {cat:'institutions', img:galleryImgs[2], title:'Hospital Water Supply', loc:'Juba, South Sudan'},
-  {cat:'industrial', img:galleryImgs[6], title:'Warehouse Storage Tank', loc:'Thika, Kenya'},
+  {cat:'industrial', img:galleryImgs[5], title:'Warehouse Storage Tank', loc:'Thika, Kenya'},
 ];
 const grid = document.getElementById('galleryGrid');
 const showMoreBtn = document.getElementById('showMoreBtn');
@@ -765,8 +766,8 @@ function renderGallery(){
   toShow.forEach(item => {
     const div = document.createElement('div');
     div.className = 'gcard';
-    div.innerHTML = `<img src="${item.img}?width=600" alt="${item.title}" loading="lazy"><div class="overlay"><strong>${item.title}</strong><span>${item.loc}</span></div>`;
-    div.addEventListener('click', () => openLightbox(`${item.img}?width=1400`, `${item.title} — ${item.loc}`));
+    div.innerHTML = `<img src="${item.img}&w=600" alt="${item.title}" loading="lazy"><div class="overlay"><strong>${item.title}</strong><span>${item.loc}</span></div>`;
+    div.addEventListener('click', () => openLightbox(`${item.img}&w=1400`, `${item.title} — ${item.loc}`));
     grid.appendChild(div);
   });
   showMoreBtn.style.display = visibleCount >= filtered.length ? 'none' : 'inline-flex';
